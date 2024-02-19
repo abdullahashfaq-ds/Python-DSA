@@ -2,6 +2,7 @@ import unittest
 from bubble_sort import bubble_sort
 from selection_sort import selection_sort
 from merge_sort import merge_sort
+from insertion_sort import insertion_sort
 
 
 class TestSortingAlgorithms(unittest.TestCase):
@@ -28,6 +29,9 @@ class TestSortingAlgorithms(unittest.TestCase):
 
     def test_selection_sort(self):
         self._run_sort_test(selection_sort)
+
+    def test_insertion_sort(self):
+        self._run_sort_test(insertion_sort)
 
 
 if __name__ == '__main__':
